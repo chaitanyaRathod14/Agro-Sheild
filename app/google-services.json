@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "183564278147",
+    "project_id": "agroshield-30888",
+    "storage_bucket": "agroshield-30888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183564278147:android:18ac2c68659786f483feb6",
+        "android_client_info": {
+          "package_name": "com.example.agroshield"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqS2lHiT0bsapRz-vM7XGRkZ7ak6kx3lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

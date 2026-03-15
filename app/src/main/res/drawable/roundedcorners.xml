@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style android:name="RoundedCorners">
+        <item android:name="cornerFamily">rounded</item>
+        <item android:name="cornerSize">16dp</item> <!-- You can adjust the corner size as needed -->
+    </style>
+</resources>

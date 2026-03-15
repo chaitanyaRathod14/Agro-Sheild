@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/messagearrowbtn_3"
+            android:layout_width="30dp"
+            android:contentDescription="Navigate to ProfileActivity page."
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/background_oval_2"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/Arrow_50"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="Get back through this."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_arrow_1_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Message TextView -->
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Messages will be displayed here."
+            android:gravity="center_horizontal|start"
+            android:padding="16dp"
+            android:text="Articles"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="66dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewArticles"
+        android:layout_width="match_parent"
+        android:layout_height="893dp"
+        android:padding="16dp" />
+
+</LinearLayout>

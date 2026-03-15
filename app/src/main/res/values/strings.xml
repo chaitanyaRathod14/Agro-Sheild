@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Agroshield</string>
+    <string name="agro_shield">Agro Shield</string>
+    <string name="login">Login</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="email" />
+    <string name="password" />
+    <string name="Register" />
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="Logout" />
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
+    <string name="User_email">\n</string>
+    <string name="zoneRecyclerView"/>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/message_background"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:elevation="4dp"
+    android:layout_weight="10">
+
+    <!-- Project Name -->
+    <TextView
+        android:id="@+id/ProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Will display AgroShield."
+        android:paddingBottom="8dp"
+        android:text="By AgroShield ~"
+        android:textColor="@color/dark_blue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Message Text -->
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Message content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"
+        android:textStyle="bold" />
+
+    <!-- Horizontal Layout for Timestamp and Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical">
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/messageTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Message timestamp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:paddingEnd="8dp" />
+
+        <!-- Check Entity Button -->
+        <Button
+            android:id="@+id/checkEntityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:backgroundTint="@color/Btn_color"
+            android:paddingHorizontal="16dp"
+            android:text="Check Entity"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

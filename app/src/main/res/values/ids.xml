@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="constraintLayout1" type="id" />
+    <item name="Weathercardview" type="id" />
+    <item name="View_2" type="id" />
+    <item name="article_title" type="id" />
+    <item name="article_subtitle" type="id" />
+    <item name="article_image" type="id" />
+    <item name="zoneRecyclerView" type="id" />
+    <item name="zoneTextView" type="id" />
+</resources>

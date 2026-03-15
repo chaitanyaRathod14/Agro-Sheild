@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Horizontal layout for the text bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Back Arrow -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/messagearrowbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="4dp"
+                android:background="@drawable/background_oval_2">
+
+                <ImageView
+                    android:id="@+id/Arrow_50"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="Get back through this."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_1_24" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Message TextView -->
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="Messages will be displayed here."
+                android:padding="16dp"
+                android:text="Message Inbox"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/Profile_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:elevation="4dp"
+                android:contentDescription="This is your profile pic"
+                app:srcCompat="@drawable/profile" />
+
+        </LinearLayout>
+
+        <!-- Message Container without any side margins or paddings -->
+        <LinearLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+</ScrollView>

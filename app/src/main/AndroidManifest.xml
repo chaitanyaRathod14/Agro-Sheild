@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions required by the application -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeatherApp"
+        tools:targetApi="33"> <!-- Use target API directly in the build.gradle file instead -->
+
+        <!-- Activities -->
+        <activity
+            android:name=".project.Activity.ZoneDetectionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".project.Activity.EntityClassifier"
+            android:exported="false" />
+
+        <activity
+            android:name=".project.Activity.HelpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".project.Activity.TermsActivity"
+            android:exported="false" />
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".project.Activity.Login"
+            android:exported="true"
+            android:theme="@style/Theme.WeatherApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity
+            android:name=".project.Activity.MessageActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".project.Activity.MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".project.Activity.Register"
+            android:exported="true" />
+
+        <activity
+            android:name=".project.Activity.WeatherActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".project.Activity.profileActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".project.Activity.home"
+            android:exported="true" />
+
+        <activity
+            android:name=".project.Activity.ArticleActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

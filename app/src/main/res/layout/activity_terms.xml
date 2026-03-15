@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/light_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Navigation Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="0dp">
+
+            <!-- Back Arrow -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/messagearrowbtn_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_oval_2"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/Arrow_50"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="Back button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_1_24"
+                    tools:layout_editor_absoluteX="5dp"
+                    tools:layout_editor_absoluteY="5dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Message Title TextView -->
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|start"
+                android:padding="16dp"
+                android:text="Terms and Conditions"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/termsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="Welcome to AgroShield! By using this application, you agree to the following terms and conditions:\n\n"
+            android:paddingBottom="8dp" />
+
+        <!-- Additional Terms and Conditions Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:text="1. Use of Data: All data collected by the app is used solely for the purpose of monitoring and managing your farming activities.\n\n"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey"
+            android:text="2. Zone Detection Alerts: The app provides intruder alerts based on real-time SMS data. The user is responsible for maintaining the GSM module and ensuring it works correctly.\n\n"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey"
+            android:text="3. Disclaimer of Liability: AgroShield is not liable for any damages arising from missed alerts or system malfunctions. Use the app at your own discretion.\n\n"
+            android:paddingBottom="4dp"/>
+
+        <!-- Add more terms as necessary -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey"
+            android:text="Please read and understand each term carefully. By proceeding, you acknowledge and agree to these terms.\n\n"
+            android:paddingBottom="20dp"/>
+
+        <!-- Accept Button -->
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept and Proceed"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
